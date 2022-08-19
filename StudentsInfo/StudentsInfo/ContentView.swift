@@ -81,11 +81,11 @@ struct ContentView_Previews: PreviewProvider {
 struct StudentsDetails : Identifiable {
     let id = UUID()
     var fullname : String
-    var year : Int
+    var year : String
     var age : Int
 }
-var sedra = StudentsDetails(fullname: "سدرة محمد", year: 2004, age: 17)
-var rahaf = StudentsDetails(fullname: "رهف خالد", year: 2004, age: 18)
-var fatima = StudentsDetails(fullname: "فاطمة أحمد", year: 2006, age: 16)
+var sedra = StudentsDetails(fullname: "سدرة محمد", year: "2004", age: 17)
+var rahaf = StudentsDetails(fullname: "رهف خالد", year: "2004", age: 18)
+var fatima = StudentsDetails(fullname: "فاطمة أحمد", year: "2006", age: 16)
 
 var students = [sedra,rahaf,fatima]
